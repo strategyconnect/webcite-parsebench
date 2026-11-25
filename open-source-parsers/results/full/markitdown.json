@@ -1,0 +1,194 @@
+{
+  "next_score": 0.3216754960425217,
+  "missing_dimensions": [],
+  "dimensions": {
+    "text": {
+      "score": 0.5395857945012019,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "text_next",
+          "weight": 1.0,
+          "score": 0.5395857945012019,
+          "documents": 508
+        }
+      ]
+    },
+    "formatting": {
+      "score": 0.569120714903511,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "formatting_v2",
+          "weight": 0.75,
+          "score": 0.5929737688612471,
+          "documents": 508
+        },
+        {
+          "subset": "headings",
+          "metric": "formatting_v2",
+          "weight": 0.125,
+          "score": 0.8248106060606061,
+          "documents": 100
+        },
+        {
+          "subset": "strikeout",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.140625,
+          "documents": 128
+        },
+        {
+          "subset": "underline",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.2,
+          "documents": 125
+        }
+      ]
+    },
+    "tables": {
+      "score": 0.11662797777638964,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "tables",
+          "metric": "table_next",
+          "weight": 0.5,
+          "score": 0.13233279216591595,
+          "documents": 500
+        },
+        {
+          "subset": "complex_table_headers",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.02241327004162414,
+          "documents": 149
+        },
+        {
+          "subset": "financial_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.11419559557155513,
+          "documents": 319
+        },
+        {
+          "subset": "insurance_filing_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.16917438907592666,
+          "documents": 412
+        },
+        {
+          "subset": "dense_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.09790939885834733,
+          "documents": 373
+        }
+      ]
+    },
+    "charts": {
+      "score": 0.004103108753944197,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "charts",
+          "metric": "chart_next",
+          "weight": 1.0,
+          "score": 0.004103108753944197,
+          "documents": 568
+        }
+      ]
+    },
+    "layout": {
+      "score": 0.0,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "layout",
+          "metric": "layout_grounding_pass_rate",
+          "weight": 1.0,
+          "score": 0.0,
+          "documents": 535
+        }
+      ]
+    },
+    "forms": {
+      "score": 0.7006153803200834,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "forms",
+          "metric": "forms_v2",
+          "weight": 0.875,
+          "score": 0.6772347660725448,
+          "documents": 500
+        },
+        {
+          "subset": "fillable_forms",
+          "metric": "forms_v2",
+          "weight": 0.125,
+          "score": 0.8642796800528526,
+          "documents": 100
+        }
+      ]
+    }
+  },
+  "subsets": {
+    "text": {
+      "output_dir": "runs/markitdown/parsebench-2/text/markitdown",
+      "test_cases_dir": "pb2-full-data/text"
+    },
+    "headings": {
+      "output_dir": "runs/markitdown/parsebench-2/headings/markitdown",
+      "test_cases_dir": "pb2-full-data/headings"
+    },
+    "strikeout": {
+      "output_dir": "runs/markitdown/parsebench-2/strikeout/markitdown",
+      "test_cases_dir": "pb2-full-data/strikeout"
+    },
+    "underline": {
+      "output_dir": "runs/markitdown/parsebench-2/underline/markitdown",
+      "test_cases_dir": "pb2-full-data/underline"
+    },
+    "tables": {
+      "output_dir": "runs/markitdown/parsebench-2/tables/markitdown",
+      "test_cases_dir": "pb2-full-data/tables"
+    },
+    "complex_table_headers": {
+      "output_dir": "runs/markitdown/parsebench-2/complex_table_headers/markitdown",
+      "test_cases_dir": "pb2-full-data/complex_table_headers"
+    },
+    "financial_tables": {
+      "output_dir": "runs/markitdown/parsebench-2/financial_tables/markitdown",
+      "test_cases_dir": "pb2-full-data/financial_tables"
+    },
+    "insurance_filing_tables": {
+      "output_dir": "runs/markitdown/parsebench-2/insurance_filing_tables/markitdown",
+      "test_cases_dir": "pb2-full-data/insurance_filing_tables"
+    },
+    "dense_tables": {
+      "output_dir": "runs/markitdown/parsebench-2/dense_tables/markitdown",
+      "test_cases_dir": "pb2-full-data/dense_tables"
+    },
+    "charts": {
+      "output_dir": "runs/markitdown/parsebench-2/charts/markitdown",
+      "test_cases_dir": "pb2-full-data/charts"
+    },
+    "layout": {
+      "output_dir": "runs/markitdown/parsebench-2/layout/markitdown",
+      "test_cases_dir": "pb2-full-data/layout"
+    },
+    "forms": {
+      "output_dir": "runs/markitdown/parsebench-2/forms/markitdown",
+      "test_cases_dir": "pb2-full-data/forms"
+    },
+    "fillable_forms": {
+      "output_dir": "runs/markitdown/parsebench-2/fillable_forms/markitdown",
+      "test_cases_dir": "pb2-full-data/fillable_forms"
+    }
+  }
+}

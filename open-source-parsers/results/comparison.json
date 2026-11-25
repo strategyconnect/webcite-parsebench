@@ -1,0 +1,213 @@
+{
+ "benchmark": "ParseBench 2",
+ "date": "2026-11-25",
+ "harness": "run-llama/ParseBench 63e926f (unmodified)",
+ "dataset": "llamaindex/ParseBench-2 revision 92a52df63fa75aa8bd05cce2214d7fe0a2bcb738",
+ "scoring": "parse-bench evaluation run --next ... --next_only; documents without output score zero",
+ "machine": "Apple Silicon Mac, CPU only, one document at a time",
+ "full_runs": {
+  "documents": 4317,
+  "rows": [
+   {
+    "system": "Webcite",
+    "pipeline": "webcite",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results discussion 14, revision 906642365c",
+    "overall": 91.85,
+    "dimensions": {
+     "text": 91.63,
+     "formatting": 92.7,
+     "tables": 95.24,
+     "charts": 93.33,
+     "layout": 87.8,
+     "forms": 90.38
+    },
+    "documents_with_output": 4316,
+    "documents_without_output": "dense_tables/dense_table_155: API error"
+   },
+   {
+    "system": "MarkItDown",
+    "pipeline": "markitdown",
+    "source": "local run",
+    "version": "markitdown 0.1.9 with the pdf extra",
+    "overall": 32.17,
+    "dimensions": {
+     "text": 53.96,
+     "formatting": 56.91,
+     "tables": 11.66,
+     "charts": 0.41,
+     "layout": 0.0,
+     "forms": 70.06
+    },
+    "documents_with_output": 4316,
+    "documents_without_output": "dense_tables/dense_table_168: MarkItDown raised RecursionError"
+   },
+   {
+    "system": "Unstructured (fast strategy)",
+    "pipeline": "unstructured_fast",
+    "source": "local run",
+    "version": "unstructured 0.22.18 behind unstructured-api 0.1.16, strategy fast",
+    "overall": 30.52,
+    "dimensions": {
+     "text": 54.78,
+     "formatting": 56.84,
+     "tables": 0.1,
+     "charts": 0.0,
+     "layout": 0.0,
+     "forms": 71.39
+    },
+    "documents_with_output": 4296,
+    "documents_without_output": "21 layout image files: the fast strategy does not accept images"
+   }
+  ]
+ },
+ "subset_runs": {
+  "documents": 305,
+  "seed": 20261125,
+  "definition": "open-source-parsers/subset.json",
+  "rows": [
+   {
+    "system": "Webcite",
+    "pipeline": "webcite",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results discussion 14, revision 906642365c",
+    "overall": 92.41,
+    "dimensions": {
+     "text": 89.33,
+     "formatting": 93.72,
+     "tables": 97.88,
+     "charts": 92.89,
+     "layout": 89.57,
+     "forms": 91.11
+    }
+   },
+   {
+    "system": "LlamaParse (Agentic Plus)",
+    "pipeline": "llamaparse_agentic_plus",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results main at 497e243f",
+    "overall": 91.72,
+    "dimensions": {
+     "text": 90.02,
+     "formatting": 93.4,
+     "tables": 95.18,
+     "charts": 93.88,
+     "layout": 88.39,
+     "forms": 89.43
+    }
+   },
+   {
+    "system": "Reducto (r-1)",
+    "pipeline": "reducto_r1",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results main at 497e243f",
+    "overall": 87.21,
+    "dimensions": {
+     "text": 81.47,
+     "formatting": 92.89,
+     "tables": 95.25,
+     "charts": 77.89,
+     "layout": 90.22,
+     "forms": 85.53
+    }
+   },
+   {
+    "system": "Extend (Parse 2)",
+    "pipeline": "extend_parse_2",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results main at 497e243f",
+    "overall": 85.84,
+    "dimensions": {
+     "text": 81.07,
+     "formatting": 87.57,
+     "tables": 89.16,
+     "charts": 86.5,
+     "layout": 82.36,
+     "forms": 88.36
+    }
+   },
+   {
+    "system": "Datalab (Accurate)",
+    "pipeline": "datalab_accurate",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results main at 497e243f",
+    "overall": 84.63,
+    "dimensions": {
+     "text": 89.95,
+     "formatting": 92.97,
+     "tables": 93.51,
+     "charts": 67.49,
+     "layout": 81.24,
+     "forms": 82.63
+    }
+   },
+   {
+    "system": "PaddleOCR-VL 1.6",
+    "pipeline": "paddleocr_vl_1_6_pipeline",
+    "source": "published outputs",
+    "version": "llamaindex/ParseBench-2-results main at 497e243f",
+    "overall": 72.56,
+    "dimensions": {
+     "text": 71.74,
+     "formatting": 81.7,
+     "tables": 78.6,
+     "charts": 58.92,
+     "layout": 71.93,
+     "forms": 72.45
+    }
+   },
+   {
+    "system": "Docling",
+    "pipeline": "docling_serve",
+    "source": "local run",
+    "version": "docling-serve 1.39.0 (docling-slim 2.152.0, docling-core 2.108.0), default settings, automatic OCR (RapidOCR on torch), CPU",
+    "overall": 59.52,
+    "dimensions": {
+     "text": 60.99,
+     "formatting": 76.45,
+     "tables": 66.21,
+     "charts": 0.0,
+     "layout": 80.01,
+     "forms": 73.45
+    }
+   },
+   {
+    "system": "MarkItDown",
+    "pipeline": "markitdown",
+    "source": "local run",
+    "version": "markitdown 0.1.9 with the pdf extra",
+    "overall": 32.93,
+    "dimensions": {
+     "text": 53.69,
+     "formatting": 58.09,
+     "tables": 16.06,
+     "charts": 0.76,
+     "layout": 0.0,
+     "forms": 68.99
+    }
+   },
+   {
+    "system": "Unstructured (fast strategy)",
+    "pipeline": "unstructured_fast",
+    "source": "local run",
+    "version": "unstructured 0.22.18 behind unstructured-api 0.1.16, strategy fast",
+    "overall": 30.39,
+    "dimensions": {
+     "text": 53.5,
+     "formatting": 59.04,
+     "tables": 0.0,
+     "charts": 0.0,
+     "layout": 0.0,
+     "forms": 69.78
+    }
+   }
+  ],
+  "note": "Subset scores are not leaderboard scores and are not estimates of full-run scores."
+ },
+ "not_run": {
+  "Marker": "model weights licence forbids use by a provider of a competing product",
+  "Docling full run": "about 13 seconds per document on this machine (16 hours for the full set); subset only",
+  "Unstructured hi_res": "needs Tesseract, not installed"
+ },
+ "repository": "https://github.com/strategyconnect/webcite-parsebench/tree/main/open-source-parsers"
+}

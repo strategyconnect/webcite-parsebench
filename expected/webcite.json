@@ -1,0 +1,19 @@
+{
+  "provider": "Webcite",
+  "pipeline": "webcite",
+  "run_date": "2026-11-18",
+  "documents_total": 4317,
+  "documents_scored": 4316,
+  "failed_documents": ["dense_tables/dense_table_155"],
+  "scorer_commit": "c21adae59f7f2ef3e8690387a0413a2e4d274486",
+  "dataset_revision": "f0757ac998ef9eb9c3c346ef170fee175b6a7d75",
+  "dimensions": {
+    "text": 91.43,
+    "formatting": 92.69,
+    "tables": 95.21,
+    "charts": 93.05,
+    "visual_grounding": 87.69,
+    "forms": 90.38
+  },
+  "overall": 91.74
+}

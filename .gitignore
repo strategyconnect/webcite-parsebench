@@ -1,0 +1,4 @@
+work/
+work-rerun/
+.env
+__pycache__/
