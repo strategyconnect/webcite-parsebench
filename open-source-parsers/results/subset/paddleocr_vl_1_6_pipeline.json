@@ -1,0 +1,194 @@
+{
+  "next_score": 0.7255601292825671,
+  "missing_dimensions": [],
+  "dimensions": {
+    "text": {
+      "score": 0.7173758221884411,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "text_next",
+          "weight": 1.0,
+          "score": 0.7173758221884411,
+          "documents": 89
+        }
+      ]
+    },
+    "formatting": {
+      "score": 0.8170206388971629,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "formatting_v2",
+          "weight": 0.75,
+          "score": 0.8774799302435902,
+          "documents": 89
+        },
+        {
+          "subset": "headings",
+          "metric": "formatting_v2",
+          "weight": 0.125,
+          "score": 0.9625,
+          "documents": 6
+        },
+        {
+          "subset": "strikeout",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.3333333333333333,
+          "documents": 6
+        },
+        {
+          "subset": "underline",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.2842377260981912,
+          "documents": 6
+        }
+      ]
+    },
+    "tables": {
+      "score": 0.7859975138661373,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "tables",
+          "metric": "table_next",
+          "weight": 0.5,
+          "score": 0.7877035003093874,
+          "documents": 25
+        },
+        {
+          "subset": "complex_table_headers",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.649403677462888,
+          "documents": 6
+        },
+        {
+          "subset": "financial_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.9558823529411765,
+          "documents": 6
+        },
+        {
+          "subset": "insurance_filing_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.6558771400070669,
+          "documents": 6
+        },
+        {
+          "subset": "dense_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.8760029392804173,
+          "documents": 6
+        }
+      ]
+    },
+    "charts": {
+      "score": 0.5891602043614333,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "charts",
+          "metric": "chart_next",
+          "weight": 1.0,
+          "score": 0.5891602043614333,
+          "documents": 50
+        }
+      ]
+    },
+    "layout": {
+      "score": 0.719268829429378,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "layout",
+          "metric": "layout_grounding_pass_rate",
+          "weight": 1.0,
+          "score": 0.719268829429378,
+          "documents": 50
+        }
+      ]
+    },
+    "forms": {
+      "score": 0.72453776695285,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "forms",
+          "metric": "forms_v2",
+          "weight": 0.875,
+          "score": 0.7322467747113031,
+          "documents": 44
+        },
+        {
+          "subset": "fillable_forms",
+          "metric": "forms_v2",
+          "weight": 0.125,
+          "score": 0.6705747126436782,
+          "documents": 6
+        }
+      ]
+    }
+  },
+  "subsets": {
+    "charts": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/charts/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/charts"
+    },
+    "complex_table_headers": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/complex_table_headers/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/complex_table_headers"
+    },
+    "dense_tables": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/dense_tables/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/dense_tables"
+    },
+    "fillable_forms": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/fillable_forms/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/fillable_forms"
+    },
+    "financial_tables": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/financial_tables/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/financial_tables"
+    },
+    "forms": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/forms/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/forms"
+    },
+    "headings": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/headings/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/headings"
+    },
+    "insurance_filing_tables": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/insurance_filing_tables/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/insurance_filing_tables"
+    },
+    "layout": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/layout/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/layout"
+    },
+    "strikeout": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/strikeout/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/strikeout"
+    },
+    "tables": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/tables/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/tables"
+    },
+    "text": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/text/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/text"
+    },
+    "underline": {
+      "output_dir": "subset-scores/paddleocr_vl_1_6_pipeline/exploded/underline/paddleocr_vl_1_6_pipeline",
+      "test_cases_dir": "subset305/underline"
+    }
+  }
+}

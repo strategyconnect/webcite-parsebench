@@ -1,0 +1,194 @@
+{
+  "next_score": 0.595180795281971,
+  "missing_dimensions": [],
+  "dimensions": {
+    "text": {
+      "score": 0.6099250440395874,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "text_next",
+          "weight": 1.0,
+          "score": 0.6099250440395874,
+          "documents": 88
+        }
+      ]
+    },
+    "formatting": {
+      "score": 0.7644815069791772,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "text",
+          "metric": "formatting_v2",
+          "weight": 0.75,
+          "score": 0.8301309661523246,
+          "documents": 88
+        },
+        {
+          "subset": "headings",
+          "metric": "formatting_v2",
+          "weight": 0.125,
+          "score": 0.9722222222222222,
+          "documents": 6
+        },
+        {
+          "subset": "strikeout",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.15902140672782875,
+          "documents": 6
+        },
+        {
+          "subset": "underline",
+          "metric": "formatting_v2",
+          "weight": 0.0625,
+          "score": 0.16666666666666666,
+          "documents": 6
+        }
+      ]
+    },
+    "tables": {
+      "score": 0.6621356189083972,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "tables",
+          "metric": "table_next",
+          "weight": 0.5,
+          "score": 0.7332148428627443,
+          "documents": 25
+        },
+        {
+          "subset": "complex_table_headers",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.7262815674565118,
+          "documents": 6
+        },
+        {
+          "subset": "financial_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.595113098267534,
+          "documents": 6
+        },
+        {
+          "subset": "insurance_filing_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.5992728756182153,
+          "documents": 6
+        },
+        {
+          "subset": "dense_tables",
+          "metric": "table_next",
+          "weight": 0.125,
+          "score": 0.44355803847393965,
+          "documents": 6
+        }
+      ]
+    },
+    "charts": {
+      "score": 0.0,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "charts",
+          "metric": "chart_next",
+          "weight": 1.0,
+          "score": 0.0,
+          "documents": 50
+        }
+      ]
+    },
+    "layout": {
+      "score": 0.8000906940035729,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "layout",
+          "metric": "layout_grounding_pass_rate",
+          "weight": 1.0,
+          "score": 0.8000906940035729,
+          "documents": 50
+        }
+      ]
+    },
+    "forms": {
+      "score": 0.7344519077610915,
+      "missing_subsets": [],
+      "slots": [
+        {
+          "subset": "forms",
+          "metric": "forms_v2",
+          "weight": 0.875,
+          "score": 0.7118438361307268,
+          "documents": 44
+        },
+        {
+          "subset": "fillable_forms",
+          "metric": "forms_v2",
+          "weight": 0.125,
+          "score": 0.892708409173644,
+          "documents": 6
+        }
+      ]
+    }
+  },
+  "subsets": {
+    "charts": {
+      "output_dir": "runs/docling_serve/parsebench-2/charts/docling_serve",
+      "test_cases_dir": "subset305/charts"
+    },
+    "complex_table_headers": {
+      "output_dir": "runs/docling_serve/parsebench-2/complex_table_headers/docling_serve",
+      "test_cases_dir": "subset305/complex_table_headers"
+    },
+    "dense_tables": {
+      "output_dir": "runs/docling_serve/parsebench-2/dense_tables/docling_serve",
+      "test_cases_dir": "subset305/dense_tables"
+    },
+    "fillable_forms": {
+      "output_dir": "runs/docling_serve/parsebench-2/fillable_forms/docling_serve",
+      "test_cases_dir": "subset305/fillable_forms"
+    },
+    "financial_tables": {
+      "output_dir": "runs/docling_serve/parsebench-2/financial_tables/docling_serve",
+      "test_cases_dir": "subset305/financial_tables"
+    },
+    "forms": {
+      "output_dir": "runs/docling_serve/parsebench-2/forms/docling_serve",
+      "test_cases_dir": "subset305/forms"
+    },
+    "headings": {
+      "output_dir": "runs/docling_serve/parsebench-2/headings/docling_serve",
+      "test_cases_dir": "subset305/headings"
+    },
+    "insurance_filing_tables": {
+      "output_dir": "runs/docling_serve/parsebench-2/insurance_filing_tables/docling_serve",
+      "test_cases_dir": "subset305/insurance_filing_tables"
+    },
+    "layout": {
+      "output_dir": "runs/docling_serve/parsebench-2/layout/docling_serve",
+      "test_cases_dir": "subset305/layout"
+    },
+    "strikeout": {
+      "output_dir": "runs/docling_serve/parsebench-2/strikeout/docling_serve",
+      "test_cases_dir": "subset305/strikeout"
+    },
+    "tables": {
+      "output_dir": "runs/docling_serve/parsebench-2/tables/docling_serve",
+      "test_cases_dir": "subset305/tables"
+    },
+    "text": {
+      "output_dir": "runs/docling_serve/parsebench-2/text/docling_serve",
+      "test_cases_dir": "subset305/text"
+    },
+    "underline": {
+      "output_dir": "runs/docling_serve/parsebench-2/underline/docling_serve",
+      "test_cases_dir": "subset305/underline"
+    }
+  }
+}
